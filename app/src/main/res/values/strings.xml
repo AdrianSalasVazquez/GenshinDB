@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">GenshinDB</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="searchHint">Search...</string>
+    <string name="homePage">Homepage</string>
+    <string name="characters">Characters</string>
+    <string name="weapons">Weapons</string>
+    <string name="artifacts">Artifacts</string>
+    <string name="map">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="introduction">Introduction</string>
+    <string name="talents">Talents</string>
+    <string name="constellation">Constellation</string>
+    <string name="build">Build</string>
+    <string name="general_info">General information</string>
+    <string name="rarity">Rarity</string>
+    <string name="element">Element</string>
+    <string name="weapon">Weapon</string>
+    <string name="nation">Nation</string>
+    <string name="affiliation">Affiliation</string>
+    <string name="title">Title</string>
+    <string name="birthday">Birthday</string>
+    <string name="gender">Gender</string>
+    <string name="description">Description</string>
+    <string name="name">Name</string>
+    <string name="stats">Statistics</string>
+    <string name="level">Level</string>
+    <string name="table_atk">ATK</string>
+    <string name="table_hp">HP</string>
+    <string name="table_def">DEF</string>
+    <string name="skills">Skills</string>
+    <string name="passive_talents">Passive talents</string>
+    <string name="constellations">Constellations</string>
+    <string name="artifact_bonus">Artifact bonus</string>
+    <string name="artifact_set">Artifact Set</string>
+    <string name="two_pieces">2 Pieces:</string>
+    <string name="four_pieces">4 Pieces:</string>
+    <string name="weapon_type">Weapon type</string>
+    <string name="obtaining">Obtaining</string>
+    <string name="weapon_passive">Weapon passive</string>
+    <string name="refinement">Refinement %1$d:</string>
+    <string name="welcome_app">Welcome to GenshinDB</string>
+    <string name="rec_weapons">Recommended weapons</string>
+    <string name="rec_artifacts">Recommended artifacts</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="email">Email</string>
+    <string name="filters">Filters</string>
+    <string name="daily_login">Daily login</string>
+    <string name="progression_calculator">Progression calculator</string>
+    <string name="tools">Tools</string>
+    <string name="disclaimer_text">GenshinDB is an unofficial application and has no relationship with HoYoverse. This application only aims to provide useful information and tools to improve the gaming experience of users.</string>
+    <string name="filter">Filter</string>
+    <string name="clear">Clear</string>
+</resources>
+

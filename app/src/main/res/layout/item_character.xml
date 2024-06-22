@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/characterCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="30dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginHorizontal="8dp">
+
+    <ImageView
+        android:id="@+id/characterNation"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:alpha="0.4"
+        android:layout_centerVertical="true"
+        android:layout_gravity="end"/>
+
+    <RelativeLayout
+        android:id="@+id/characterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/characterIcon"
+            app:shapeAppearanceOverlay="@style/roundedView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="left"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/characterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="21sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_toEndOf="@id/characterIcon" />
+        <TextView
+            android:id="@+id/characterRarity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/estrellas"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_below="@id/characterName"
+            android:layout_toEndOf="@id/characterIcon" />
+
+        <ImageView
+            android:id="@+id/characterVisionIcon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/characterRarity"
+            android:layout_toEndOf="@id/characterIcon"/>
+        <TextView
+            android:id="@+id/characterVision"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_below="@id/characterRarity"
+            android:layout_toEndOf="@id/characterVisionIcon" />
+
+        <ImageView
+            android:id="@+id/characterWeaponIcon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/characterVision"
+            android:layout_toEndOf="@id/characterIcon"/>
+        <TextView
+            android:id="@+id/characterWeapon"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_below="@id/characterVision"
+            android:layout_toEndOf="@id/characterWeaponIcon" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

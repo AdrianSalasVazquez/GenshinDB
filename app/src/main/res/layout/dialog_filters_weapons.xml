@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialogbg">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_round_remove"
+            android:layout_gravity="center|top"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filters"
+            android:gravity="center"
+            android:padding="10dp"
+            style="@style/titleTextType"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="15dp"
+            android:background="@color/grey_secondary_color"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/subtitleTextType"
+            android:text="@string/rarity" />
+        <RatingBar
+            android:id="@+id/ratingBarRarity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="0"
+            android:max="5"
+            android:stepSize="1"
+            android:numStars="5"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:progressTint="@color/estrellas"
+            android:secondaryProgressTint="@color/grey_main_color"
+            android:progressBackgroundTint="@color/grey_secondary_color"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/subtitleTextType"
+            android:text="@string/weapon_type" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal">
+            <ToggleButton
+                android:id="@+id/btnSword"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/white"
+                android:checked="true"
+                android:background="@drawable/icon_sword"/>
+            <ToggleButton
+                android:id="@+id/btnClaymore"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/white"
+                android:checked="true"
+                android:background="@drawable/icon_claymore"/>
+            <ToggleButton
+                android:id="@+id/btnPolearm"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/white"
+                android:checked="true"
+                android:background="@drawable/icon_polearm"/>
+            <ToggleButton
+                android:id="@+id/btnCatalyst"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/white"
+                android:checked="true"
+                android:background="@drawable/icon_catalyst"/>
+            <ToggleButton
+                android:id="@+id/btnBow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/white"
+                android:checked="true"
+                android:background="@drawable/icon_bow"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnClearFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="40dp"/>
+
+    </LinearLayout>
+</ScrollView>

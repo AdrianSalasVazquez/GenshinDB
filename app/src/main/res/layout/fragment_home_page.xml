@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentHomePage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/titleWelcomeApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_app"
+            style="@style/titleTextType"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imageAppIcon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/genshindb_icon"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleWelcomeApp"/>
+
+        <LinearLayout
+            android:id="@+id/boxDisclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="20dp"
+            android:padding="10dp"
+            android:background="@drawable/search_view_background"
+            app:layout_constraintTop_toBottomOf="@id/imageAppIcon">
+
+            <TextView
+                android:id="@+id/titleDisclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disclaimer"
+                android:textAlignment="textStart"
+                style="@style/titleTextType"/>
+
+            <TextView
+                android:id="@+id/textDisclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/disclaimer_text"
+                android:textAlignment="textStart"
+                style="@style/bodyTextType" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/boxTools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:padding="10dp"
+            android:background="@drawable/search_view_background"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/boxDisclaimer">
+
+            <TextView
+                android:id="@+id/titleTools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tools"
+                android:textAlignment="textStart"
+                style="@style/titleTextType" />
+
+            <Button
+                android:id="@+id/buttonDailyLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/dailylogin"
+                android:drawableTint="@color/white"
+                android:text="@string/daily_login"
+                android:elevation="10dp" />
+
+            <Button
+                android:id="@+id/buttonProgressionCalculator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/calculadora"
+                android:drawableTint="@color/white"
+                android:text="@string/progression_calculator"
+                android:elevation="10dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

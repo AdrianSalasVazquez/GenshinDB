@@ -1,0 +1,58 @@
+<resources>
+    <style name="Theme.GenshinDB" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+
+    <!-- Bordes imagen redondos -->
+    <style name="roundedView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">25dp</item>
+    </style>
+    <!-- imagen circular -->
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50dp</item>
+    </style>
+
+
+    <!-- Tab estilo texto -->
+    <style name="tabTextType" parent="">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Estilos texto descripcion -->
+    <style name="titleTextType" parent="">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="subtitleTextType" parent="">
+        <item name="android:textSize">@dimen/subtitle_text_size</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="bodyTextType" parent="">
+        <item name="android:textSize">@dimen/body_text_size</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Animacion ventana de dialogo inferior -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+</resources>

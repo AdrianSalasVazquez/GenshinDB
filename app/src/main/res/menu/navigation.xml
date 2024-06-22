@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/MenuCharacters"
+        android:icon="@drawable/personajes"
+        android:title="@string/characters"/>
+    <item
+        android:id="@+id/MenuWeapons"
+        android:icon="@drawable/armas"
+        android:title="@string/weapons"/>
+    <item
+        android:id="@+id/MenuInicio"
+        android:icon="@drawable/inicio"
+        android:title="@string/homePage"/>
+    <item
+        android:id="@+id/MenuArtifacts"
+        android:icon="@drawable/artefactos"
+        android:title="@string/artifacts"/>
+    <item
+        android:id="@+id/MenuMap"
+        android:icon="@drawable/mapa"
+        android:title="@string/map"/>
+</menu>

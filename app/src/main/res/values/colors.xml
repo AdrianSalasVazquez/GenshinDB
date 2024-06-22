@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey_main_color">#212121</color>
+    <color name="grey_secondary_color">#404040</color>
+
+
+    <color name="estrellas">#ffce33</color>
+
+
+    <color name="anemo">#a3efca</color>
+    <color name="anemo_dark">#2daf83</color>
+
+    <color name="cryo">#cdfefe</color>
+    <color name="cryo_dark">#62c7c8</color>
+
+    <color name="dendro">#b3ec2b</color>
+    <color name="dendro_dark">#77a705</color>
+
+    <color name="electro">#debaff</color>
+    <color name="electro_dark">#a76bcf</color>
+
+    <color name="geo">#f1d45f</color>
+    <color name="geo_dark">#cc8905</color>
+
+    <color name="hydro">#08e4ff</color>
+    <color name="hydro_dark">#0595c7</color>
+
+    <color name="pyro">#ffa970</color>
+    <color name="pyro_dark">#c65307</color>
+
+
+
+    <color name="rareza1">#868f9b</color>
+    <color name="rareza1_dark">#4f5862</color>
+
+    <color name="rareza2">#61986f</color>
+    <color name="rareza2_dark">#4a5a5a</color>
+
+    <color name="rareza3">#4c97ad</color>
+    <color name="rareza3_dark">#505573</color>
+
+    <color name="rareza4">#b283c5</color>
+    <color name="rareza4_dark">#65588a</color>
+
+    <color name="rareza5">#cf9a55</color>
+    <color name="rareza5_dark">#6f5554</color>
+</resources>

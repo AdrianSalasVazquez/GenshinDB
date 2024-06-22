@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtifactDescActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/artifactToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/grey_main_color"
+        android:gravity="center"
+        android:theme="@style/Widget.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actionbarTitle"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="30dp"
+            android:paddingRight="60dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollArtifact"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/artifactToolBar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_style_generic"
+            android:elevation="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/titleArtifactSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artifact_set"
+                style="@style/titleTextType"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/boxArtifactSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@id/titleArtifactSet">
+
+                <ImageView
+                    android:id="@+id/iconArtifactFlower"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/iconArtifactPlume"/>
+                <ImageView
+                    android:id="@+id/iconArtifactPlume"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/iconArtifactFlower"
+                    app:layout_constraintRight_toLeftOf="@id/iconArtifactSands"/>
+                <ImageView
+                    android:id="@+id/iconArtifactSands"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/iconArtifactPlume"
+                    app:layout_constraintRight_toRightOf="parent"/>
+                <ImageView
+                    android:id="@+id/iconArtifactGoblet"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toBottomOf="@id/iconArtifactFlower"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/iconArtifactCirclet"/>
+                <ImageView
+                    android:id="@+id/iconArtifactCirclet"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toBottomOf="@id/iconArtifactFlower"
+                    app:layout_constraintLeft_toRightOf="@id/iconArtifactGoblet"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/titleArtifactBonus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artifact_bonus"
+                style="@style/titleTextType"
+                app:layout_constraintTop_toBottomOf="@id/boxArtifactSet"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/boxArtifactBonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/titleArtifactBonus">
+
+            <TextView
+                android:id="@+id/subtitle2Pieces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/two_pieces"
+                style="@style/subtitleTextType"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/description2Pieces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/bodyTextType"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/subtitle2Pieces"/>
+
+            <TextView
+                android:id="@+id/subtitle4Pieces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/four_pieces"
+                style="@style/subtitleTextType"
+                app:layout_constraintTop_toBottomOf="@id/description2Pieces"/>
+            <TextView
+                android:id="@+id/description4Pieces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/bodyTextType"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/subtitle4Pieces"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- SEPARADOR INFERIOR -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="19dp"
+                app:layout_constraintTop_toBottomOf="@id/boxArtifactBonus"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
